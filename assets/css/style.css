@@ -101,11 +101,19 @@ header nav a
 {
     #sec1 .container .txt
     {
-        margin: 50px;
         line-height: 3em;
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
+    #sec1 .container .icon i
+    {
+        font-size: 2em;
+    }
+
+    #sec1 .container button
+    {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 880px)
@@ -117,6 +125,15 @@ header nav a
         margin: 50px;
     }
 }
+
+@media screen and (max-width: 500px)
+{
+    #sec1 .container .txt
+    {
+        font-size: 0.8em;
+    }
+}
+
 
 /*-----------------------------Section 2 : A propos-----------------------------*/
 #sec2
@@ -334,23 +351,16 @@ header nav a
     box-shadow: 1px 1px 10px #111;
 }
 
-#sec3 .button
+#sec3 .container .bottom button
 {
-    margin-top: 70px;
-}
-
-#sec3 .button a
-{
-    padding: 15px 50px;
-    border: 1px solid #b3aca7;
-    width: 300px;
-}
-
-#sec3 .button:hover a
-{
-    background: #8C174D;
-    color: #e2dedb;
-    transition: all 0.3s ease-in-out;
+    background-color: #8C174D;
+    color: white;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
 }
 
 .cadre:before, .cadre:after
@@ -427,6 +437,13 @@ header nav a
     {
         font-size: 0.8em;
     }
+
+    #sec3 .container .bottom button
+    {
+        margin-top: 30px;
+        padding: 5px 20px;
+        font-size: 0.9em;
+    }
 }
 
 
@@ -481,12 +498,6 @@ header nav a
 }
 
 /*Timeline*/
-
-#sec4 .container h1 
-{
-    text-align:center;
-    font-size: 40px;
-}
     
 #sec4 .container ul 
 {
@@ -528,20 +539,12 @@ header nav a
     
 #sec4 .container ul li:nth-child(odd) div 
 {
-  left: 45px;
+  left: 50px;
 }
     
 #sec4 .container ul li:nth-child(even) div 
 {
-  left: -445px;
-}
-    
-#sec4 .container time 
-{
-  font-weight: bold;
-  font-size: 18px;
-  display: block;
-  margin-bottom: 10px;
+  left: -470px;
 }
     
 #sec4 .container ul li div 
@@ -568,16 +571,50 @@ header nav a
   opacity: 1;
 }
     
-@media screen and (max-width: 900px) 
+@media screen and (max-width: 1000px) 
 {
     #sec4 .container ul li div 
     {
-    width: 250px;
+    width: 200px;
     }
 
     #sec4 .container ul li:nth-child(even) div 
     {
-    left: -289px;
+    left: -280px;
     /*250+45-6*/
+    }
+
+    #sec4 .container .exp h1
+    {
+        font-size: 0.8em;
+    }
+
+    #sec4 .container .exp h2
+    {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #sec4 .container ul li div 
+    {
+    width: 100px;
+    }
+
+    #sec4 .container ul li:nth-child(even) div 
+    {
+    left: -180px;
+    /*250+45-6*/
+    }
+
+    #sec4 .container .exp h1
+    {
+        font-size: 0.6em;
+    }
+
+    #sec4 .container .exp h2
+    {
+        font-size: 0.5em;
     }
 }
