@@ -1,0 +1,289 @@
+/* Définition des polices */
+
+/* Mise en page du texte */
+li
+{
+    line-height: 200%;
+}
+
+/* Texte section droite */
+.txt_coord
+{
+    margin-left: 10%;
+}
+
+.txt_forma
+{
+    margin-left: 5%; margin-top: 3%;
+}
+
+.img_bure
+{
+    width: 35%; height: 30%;
+    margin-left: 13%;
+}
+
+.img_bure2
+{
+    width: 25%; height: 20%;
+    margin-left: 10%;
+}
+
+.txt_lois
+{
+    margin-left: 5%;
+}
+
+
+/* Background */
+.contenu
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.contenu section
+{
+    width: 50%;
+    float: right;
+}
+
+#centre
+{
+    margin-right: 42%;
+    font-size: 90%;
+}
+
+/* Section de droite */
+/* Logo LinkedIn */
+#logo_lin
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo_lin img
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+/* Logo CV droit */
+/* Element 1 */
+.imageg_EledI img
+{
+    float: left;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 13.5%; left: -8.5%;
+}
+
+.txt_EledI 
+{
+    height: 30%;
+    margin-left: 5%; margin-top: 8%;
+}
+     
+.imaged_EledI img
+{
+    float: right;
+    position: absolute;
+    width: 80px; height: 5px;
+    top: 15.5%; right: 30%;
+}
+
+/* Element 2 */
+.imageg_EledII img
+{
+    float: left;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 45%; left: -8.5%;
+}
+
+.txt_EledII 
+{
+    height: 30%;
+    margin-left: 5%; margin-top: 8%;
+}
+     
+.imaged_EledII img
+{
+    float: right;
+    position: absolute;
+    width: 80px; height: 5px;
+    top: 47.5%; right: 30%;
+}
+
+/* Element 3 */
+.imageg_EledIII img
+{
+    float: left;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 72%; left: -8.5%;
+}
+
+.txt_EledIII 
+{
+    height: 30%;
+    margin-left: 5%; margin-top: 8%;
+}
+     
+.imaged_EledIII img
+{
+    float: right;
+    position: absolute;
+    width: 80px; height: 5px;
+    top: 74%; right: 30%;
+}
+
+/* Element 4 */
+.imageg_EledIV img
+{
+    float: left;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 86%; left: -8.5%;
+}
+
+.txt_EledIV 
+{
+    height: 30%;
+    margin-left: 5%; margin-top: 8%;
+}
+     
+.imaged_EledIV img
+{
+    float: right;
+    position: absolute;
+    width: 80px; height: 5px;
+    top: 88%; right: 30%;
+}
+
+.coord
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.coord img
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 3%;
+}
+
+#droite .txt_d
+{
+    color: #fff;
+    font-size: 90%;
+    text-align: left;
+    position: absolute;
+    top: 23%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/* Image background droit */
+#droite
+{ 
+    width: 30%;
+    position: absolute;
+    top: 0; right: 0;
+}
+
+
+#droite .image_d
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Section de gauche */
+/* Image background gauche */
+#gauche
+{ 
+    width: 350px; 
+    position: absolute; 
+    top: 0; left: 0;
+}
+
+/* Element 1 */
+.imageg_ElegI img
+{
+    float: left;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 6%; left: 5%;
+}
+
+.txt_ElegI 
+{
+    height: 60px;
+    margin-left: 4%; margin-top: 10%;
+}
+     
+.imaged_ElegI img
+{
+    float: right;
+    position: absolute;
+    width: 300px; height: 5px;
+    top: 8%; right: 35%;
+}
+
+/*Element 2*/
+.imageg_ElegII img
+{
+    float: left;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 34.5%; left: 5%;
+}
+
+.txt_ElegII 
+{
+    height: 60px;
+    margin-left: 4%; margin-top: 10%;
+}
+     
+.imaged_ElegII img
+{
+    float: right;
+    position: absolute;
+    width: 300px; height: 5px;
+    top: 37%; right: 35%;
+}
+
+/*Element 3*/
+.imageg_ElegIII img
+{
+    float: left;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 84.5%; left: 5%;
+}
+
+.txt_ElegIII 
+{
+    height: 60px;
+    margin-left: 4%; margin-top: 10%;
+}
+     
+.imaged_ElegIII img
+{
+    float: right;
+    position: absolute;
+    width: 300px; height: 5px;
+    top: 87%; right: 35%;
+}
+
+/* Liste */
+
