@@ -21,8 +21,8 @@ header
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1600px; /* Longueur max */
+    justify-content: space-around;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 20px 0 20px;
     background-color: #D2C9F8;
@@ -618,3 +618,43 @@ header nav a
         font-size: 0.5em;
     }
 }
+
+/*-----------------------------Waves animation-----------------------------*/
+#waves
+{
+    width: 100%;
+    height: 100px;
+}
+
+.top2,
+.bottom2 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top2 {
+  background-color: #d2c9f8;
+  background-image: linear-gradient(to bottom, rgba(#715, .5), transparent);
+  color: #ddf;
+}
+
+.bottom2
+{
+    background-color: #F3F3F3;
+}
+
+
+.canvas-wrap {
+  max-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+canvas {
+  display: block;
+}
+  
