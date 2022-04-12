@@ -26,34 +26,7 @@ function callbackFunc() {
 
 
 //-------------------------------Script wave-------------------------------//
-//---------Wave top---------//
-let canvas = document.getElementById("waves");
-let ctx = canvas.getContext("2d");
 
-ctx.beginPath();
-ctx.moveTo(0, 100);
-ctx.bezierCurveTo(canvas.width/3, canvas.height, 2*canvas.width/3, 0, canvas.width, 100);
-ctx.stroke();
-
-let numberOfLines = 5;
-let i = 0;
-let cycle = function() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  for(let j=0; j<numberOfLines; ++j) {
-    ctx.lineWidth = 1+2*(numberOfLines-j);
-    ctx.strokeStyle = 'rgba(100,200,'+Math.floor(Math.abs(Math.cos(i/80)*256))+','+(j/5+0.1)+')';
-    let offset = (i+j*10*Math.abs(Math.cos(i/100)))/20;
-    let y = (Math.sin(offset)+1)*canvas.height/2;
-    let cpy1 = (Math.cos(offset)+0.5)*canvas.height;
-    let cpy2 = canvas.height - cpy1;
-    ctx.beginPath();
-    ctx.moveTo(0, y);
-    ctx.bezierCurveTo(canvas.width/3, cpy1, 2*canvas.width/3, cpy2, canvas.width, y);
-    ctx.stroke();
-  }
-  i++;
-};
-setInterval(cycle, 30);
 
 
 //---------Wave bottom---------//
