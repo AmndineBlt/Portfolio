@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon formulaire</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <section class="form">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>Contactez-moi</h1>
+            <div class="separation"></div>
+            <div class="corps-formulaire">
+                <div class="gauche">
+                  <div class="groupe">
+                    <label>Nom Prénom</label>
+                    <input type="text" id="name" placeholder="Dupont Amélie"/>
+                    <small class="error"></small>
+                    <i class="fas fa-user"></i>
+                  </div>
+
+                  <div class="groupe">
+                    <label>Adresse e-mail</label>
+                    <input type="text" id="email" placeholder="Email@contact.fr"/>
+                    <small class="error"></small>
+                    <i class="fas fa-envelope"></i>
+                  </div>
+
+                  <div class="groupe">
+                    <label>Téléphone</label>
+                    <input type="text" id="tel" pattern="^0[0-9]{9}" minlength="10" placeholder="0x xx xx xx xx"/>
+                    <small class="error"></small>
+                    <i class="fas fa-mobile"></i>
+                  </div>
+                </div>
+        
+                <div class="droite">
+                  <div class="groupe">
+                    <label>Message</label>
+                    <textarea id="message" placeholder="Votre message ici..."></textarea>
+                    <small class="error"></small>
+                    <p id="success"></p>
+                  </div>
+                </div>
+            </div>
+        
+            <div class="pied-formulaire">
+              <input type="submit" value="Envoyez">
+            </div>
+        </form>
+    </section>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

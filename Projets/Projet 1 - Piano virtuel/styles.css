@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: rgb(161, 228, 255);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+#piano .whiteNote p {
+  margin-top: 300px;
+  text-align: center;
+}
+
+#piano .blackNote p {
+  margin-top: 150px;
+  text-align: center;
+  color: white;
+}
+
+
+#piano {
+  display: flex;
+  border: 2px solid black;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.whiteNote {
+  --width: 100px;
+  background: white;
+  border: 1px solid black;
+}
+
+.activeWhite {
+  background-color: #CCC;
+}
+
+.blackNote {
+  --width: 60px;
+  background: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.activeBlack {
+  background-color: #333;
+}

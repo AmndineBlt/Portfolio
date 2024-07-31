@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400;500;700&family=Alegreya:wght@400;500;600&display=swap');
+
+*
+{
+    font-family: 'Alegreya', serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: #f3f3f3;
+    color: #15043f;
+    overflow-x: hidden;
+}
+
+/*-----------------------------Header-----------------------------*/
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    background-color: #D2C9F8;
+}
+
+header img
+{
+    width: 50px;
+}
+
+header nav a
+{
+    color: #15043f;
+    font-weight: 700;
+    margin-left: 50px;
+    font-size: 1.1em;
+}
+
+
+
+/*-----------------------------Section 1-----------------------------*/
+#sec1
+{
+    height: 100vh;
+    background-color: #d2c9f8;
+    background-size: cover;
+    clip-path: polygon(50% 0, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    transition: 0.5s;
+}
+
+#sec1:hover
+{
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+}
+
+#sec1 .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #919192;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#sec1 .container .icon i
+{
+    margin: 0 50px;
+    font-size: 3.3em;
+    color: #8C174D;
+}
+
+#sec1 .container .txt
+{
+    text-align: center;
+    margin-top: 50px;
+    color: #15043f;
+    line-height: 3em;
+    font-size: 1.8em;
+}
+
+#sec1 .container button
+{
+    background-color: #8C174D;
+    color: white;
+    margin-top: 80px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px)
+{
+    #sec1 .container .txt
+    {
+        line-height: 3em;
+        font-size: 1.4em;
+    }
+
+    #sec1 .container .icon i
+    {
+        font-size: 2em;
+    }
+
+    #sec1 .container button
+    {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 880px)
+{
+    #sec1 .container .txt
+    {
+        line-height: 3em;
+        font-size: 1em;
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    #sec1 .container .txt
+    {
+        font-size: 0.8em;
+    }
+}
+
+
+/*-----------------------------Section 2 : A propos-----------------------------*/
+#sec2
+{
+    background-color: #f3f3f3;
+    color: #15043f;
+    margin-bottom: 110px;
+}
+
+#sec2 .container 
+{
+    margin: 25px 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+#sec2 .container .card
+{
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #e4e3e3;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 5px #929292;
+}
+
+#sec2 .container .card .arrow::before
+{
+    width: 60px;
+    height: 60px;
+    bottom: 0%;
+    left: 50%;
+    background-color: #a09abd;
+    border-radius: 50px;
+    transform: translate(-50%, 50%);
+    /* Fleche */
+    position: absolute;
+    content: "\f107";
+    font-family: "FontAwesome";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: #1d1e31;
+}
+
+#sec2 .container h2
+{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 25px 0;
+}
+
+#sec2 .container p
+{
+    font-size: 1.2em;
+    margin: 0 20px;
+    color: #5e5e5e;
+}
+
+#sec2 .container .top
+{
+    text-align: center;
+    width: 1000px;
+}
+
+#sec2 .container .bottom
+{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 20px 30px;
+}
+
+#sec2 .container .bottom i
+{
+    font-size: 1.2em;
+    color: #a09abd;
+}
+
+#sec2 .container .bottom .left,
+#sec2 .container .bottom .right
+{
+    max-width: 500px;
+    text-align: center;
+}
+
+#sec2 .container .bottom .txt_bottom
+{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#sec2 .container .bottom i
+{
+    padding: 10px 15px;
+}
+
+@media screen and (max-width: 1000px)
+{
+    #sec2 .container .top,
+    #sec2 .container .bottom
+    {
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 880px)
+{
+    #sec2 .container .bottom
+    {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #sec2 .container .top
+    {
+        width: 100%;
+    }
+
+    #sec2 .container .right
+    {
+        margin: 50px 0;
+    }
+}
+
+
+/*-----------------------------Section 3 : Portfolio-----------------------------*/
+#sec3
+{
+    margin: 100px 50px 50px 50px;
+}
+#sec3 .center
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#sec3 .center .title
+{
+    margin-bottom: 20px;
+}
+
+#sec3 .center .title h2
+{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#sec3 .center .title h3
+{
+    color: #5e5e5e;
+    font-size: 1.2em;
+}
+
+#sec3 .container
+{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#sec3 .container .cadre
+{
+    position: relative;
+    padding: 40px 10px 25px 0;
+    width: 30%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0 auto; /* centre la card */
+    color: rgb(53, 53, 53);
+    text-align: center;
+    display: flex;
+}
+
+#sec3 .container .cadre .top
+{
+    padding: 25px 0;
+}
+
+#sec3 .container .cadre .mid
+{
+    padding: 25px 0;
+}
+
+#sec3 .container .cadre .mid img
+{
+    width: 250px;
+}
+
+#sec3 .container .cadre .card-left,
+#sec3 .container .cadre .card-mid,
+#sec3 .container .cadre .card-right
+{
+    height: 450px;
+    width: 300px;
+    background-color: #d2c9f8;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px #111;
+}
+
+#sec3 .container .bottom button
+{
+    background-color: #8C174D;
+    color: white;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.cadre:before, .cadre:after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 1px solid;
+    transition: all 0.6s ease;
+    border-radius: 5px;
+    z-index: -1; /* Pour que les cadres passent dessous l'image */
+}
+
+.cadre:before
+{
+    top: 15px;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+.cadre:after
+{
+    bottom: 0px;
+    right: 15px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.cadre:hover:before, .cadre:hover:after
+{
+    border-color: #aca49c;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1190px) 
+{
+    #sec3 .container
+    {
+        flex-direction: column;
+    }
+
+    #sec3 .container .cadre
+    {
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 500px) 
+{
+    #sec3 .container .cadre .mid img
+    {
+        width: 100px;
+    }
+
+    #sec3 .container .cadre .card-left,
+    #sec3 .container .cadre .card-mid,
+    #sec3 .container .cadre .card-right
+    {
+        width: 200px;
+        height: 300px;
+    }
+
+    #sec3 .container .cadre h1
+    {
+        font-size: 1em;
+    }
+
+    #sec3 .container .cadre p
+    {
+        font-size: 0.8em;
+    }
+
+    #sec3 .container .bottom button
+    {
+        margin-top: 30px;
+        padding: 5px 20px;
+        font-size: 0.9em;
+    }
+}
+
+
+/*-----------------------------Section 4 : Timeline-----------------------------*/
+#sec4
+{
+    background-color: #d2c9f8;
+}
+
+#sec4 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#sec4 img.wave-d
+{
+    filter: drop-shadow(0px 8px 5px rgba(99, 44, 110, 0.75));
+}
+
+#sec4 img.wave-u
+{
+    filter: drop-shadow(0px -8px 5px rgba(99, 44, 110, 0.75));
+}
+
+#sec4 .container
+{
+    background-color: #d2c9f8;
+    margin: 0 auto;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#sec4 .container .exp h1
+{
+    font-size: 1.3em;
+    color: #8C174D;
+    text-align: left;
+}
+
+#sec4 .container .exp h2
+{
+    font-size: 1em;
+}
+
+#sec4 .container .exp p
+{
+    color: #111;
+}
+
+/*Timeline*/
+    
+#sec4 .container ul 
+{
+  padding: 50px 0;
+}
+    
+#sec4 .container ul li 
+{
+  position:relative;
+  list-style-type: none;
+  width: 6px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+    
+#sec4 .container ul li::after 
+{
+  background: white;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+    
+#sec4 .container ul li div
+{
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+  bottom: 0;
+  background: #f3f3f3;
+}
+    
+#sec4 .container ul li:nth-child(odd) div 
+{
+  left: 50px;
+}
+    
+#sec4 .container ul li:nth-child(even) div 
+{
+  left: -470px;
+}
+    
+#sec4 .container ul li div 
+{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+    
+#sec4 .container ul li:nth-child(odd) div 
+{
+  transform: translate3d(200px, 0, 0);
+}
+    
+#sec4 .container ul li:nth-child(even) div 
+{
+  transform: translate3d(-200px, 0, 0);
+}
+    
+#sec4 .container ul li.show div 
+{
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+    
+@media screen and (max-width: 1000px) 
+{
+    #sec4 .container ul li div 
+    {
+    width: 200px;
+    }
+
+    #sec4 .container ul li:nth-child(even) div 
+    {
+    left: -280px;
+    /*250+45-6*/
+    }
+
+    #sec4 .container .exp h1
+    {
+        font-size: 0.8em;
+    }
+
+    #sec4 .container .exp h2
+    {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #sec4 .container ul li div 
+    {
+    width: 100px;
+    }
+
+    #sec4 .container ul li:nth-child(even) div 
+    {
+    left: -180px;
+    /*250+45-6*/
+    }
+
+    #sec4 .container .exp h1
+    {
+        font-size: 0.6em;
+    }
+
+    #sec4 .container .exp h2
+    {
+        font-size: 0.5em;
+    }
+}
+
+/*-----------------------------Waves animation-----------------------------*/
+#waves
+{
+    width: 100%;
+    height: 100px;
+}
+
+.top-wave 
+{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #d2c9f8;
+  background-image: linear-gradient(to bottom, rgba(#715, .5), transparent);
+  color: #ddf;
+}
+
+.canvas-wrap 
+{
+  max-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+canvas 
+{
+  display: block;
+}
+  
